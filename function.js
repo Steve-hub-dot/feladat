@@ -10,7 +10,7 @@ export function assignment(colors) {
         
         function factorial(n){
             let factorial = 1;
-            for(i = n; i > 0; i--) {
+            for(let i = n; i > 0; i--) {
                 factorial = factorial*i;
             }
             return factorial;
@@ -20,7 +20,7 @@ export function assignment(colors) {
             return (factorial(n)/(factorial(r)*(factorial(n-r))))
         }
 
-        for(i = 2; i < colors.length+1; i++) {
+        for(let i = 2; i < colors.length+1; i++) {
             answer = answer + nCr(colors.length, i);
         }
         return answer;
