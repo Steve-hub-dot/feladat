@@ -1,3 +1,11 @@
 export function assignment(colors){
-    return (colors.length-1)*2
+    if(colors.length > 2){
+        return (colors.length-1)*2
+    }
+    else if(colors.length < 2){
+        return 0;
+    }
+    else{
+        return 1;
+    }
 }
